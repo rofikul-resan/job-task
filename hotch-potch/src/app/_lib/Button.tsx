@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({ className, children }) => {
         fontSize: "16px",
         fontWeight: "500",
         borderRadius: "5px",
-        padding: "0.5rem",
+        padding: "10px 10px",
       }}
     >
       {children}

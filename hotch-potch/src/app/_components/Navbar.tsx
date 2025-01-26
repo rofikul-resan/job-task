@@ -1,4 +1,4 @@
-import Button from "@/lib/Button";
+import Button from "@/app/_lib/Button";
 import Image from "next/image";
 import React from "react";
 

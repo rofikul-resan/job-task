@@ -1,4 +1,4 @@
-import Button from "@/lib/Button";
+import Button from "@/app/_lib/Button";
 import { FaPlayCircle } from "react-icons/fa";
 
 const HeroSection = () => {
@@ -29,7 +29,7 @@ const HeroSection = () => {
           </h1>{" "}
           <div className="bg-gradient-to-l from-[#FFC947] to-[#FC6739] w-[72%] mx-auto h-1.5"></div>{" "}
         </div>
-        <p>
+        <p className="text-paragraphColor">
           Artificial intelligence writting tool helps you create blogs, social
           media websites and much more.
         </p>
