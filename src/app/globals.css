@@ -1,21 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #12141D;
+  --foreground: #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #12141d;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: 500;
+
+}
+
+h2 {
+  font-size: 42px;
+  line-height: 48px;
+  font-weight: 600;
+
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+
+}
+
+/* Custom Tailwind class for line height and font size */
+@layer utilities {
+  .text-body2 {
+    @apply leading-sm text-sm font-sm
+  }
+}
+
+.main-gradient {
+  background: linear-gradient(0deg, #2B59FF 100%, #BB2BFF 100%);
+}
+
+.hover-gradient {
+  background: linear-gradient(0deg, #5C7FFF 100%, #CB5CFF 100%);
+}
+
+.click-gradient {
+  background: linear-gradient(0deg, #0035F5 100%, #A600F5 100%);
 }
