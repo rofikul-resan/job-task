@@ -17,7 +17,7 @@ const OfferSection2 = () => {
         <Button className="main-gradient px-3">Start 14 Days Free Trial</Button>
       </div>
       <div className="relative">
-        <div className="h-48 w-48 absolute top-28 left-20 bg-[#9F36F2B2] rounded-full blur-[150px] -z-10">
+        <div className="h-48 w-48 absolute bottom-10 left-20 bg-[#9F36F2B2] rounded-full blur-[150px] -z-10 animate-pulse">
           {/* bg blue light  */}
         </div>
         {/* <div className="absolute top-1/2 right-20  z-10 w-[240px] h-[105px] bg-white shadow-md rounded-md overflow-hidden ">
