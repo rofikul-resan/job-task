@@ -8,13 +8,21 @@ interface ToolsCardProps {
 }
 const ToolsCard: React.FC<ToolsCardProps> = ({ image, title, details }) => {
   return (
-    <div className="flex rounded-lg p-4 bg-[#282A37] shadow-md">
-      <div>
-        <Image src={image} alt={title} height={34} width={34} />
+    <div className="flex justify-between gap-4 rounded-lg p-4 bg-[#282A37] shadow-md">
+      <div className="h-9 w-9 ">
+        <Image
+          src={image}
+          alt={title}
+          height={34}
+          width={34}
+          className="w-full"
+        />
       </div>
-      <div className="space-y-2 ml-4">
-        <h3 className="text-headlineColor">{title}</h3>
-        <p className="text-paragraphColor text-sm">{details}</p>
+      <div className="space-y-2 w-10/12">
+        <h5 className="text-headlineColor">{title}</h5>
+        <p className="text-paragraphColor text-sm tracking-tighter">
+          {details}
+        </p>
       </div>
     </div>
   );
