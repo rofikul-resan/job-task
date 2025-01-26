@@ -23,7 +23,7 @@ const bandLogo: StaticImageData[] = [
 
 const BrandSection = () => {
   return (
-    <div className="w-10/12 mx-auto py-20 ">
+    <div className="w-10/12 mx-auto ">
       <h3 className="text-center">Trusted by nearly 5000+ paying customers</h3>
       <div className="mt-10">
         <div className="grid grid-cols-2 md:grid-cols-4  justify-between">
