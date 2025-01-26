@@ -64,10 +64,9 @@ h5 {
 }
 
 /* Custom Tailwind class for line height and font size */
-@layer utilities {
-  .text-body2 {
-    @apply leading-sm text-sm font-sm
-  }
+
+.text-body2 {
+  @apply leading-sm text-sm font-sm
 }
 
 .main-gradient {
