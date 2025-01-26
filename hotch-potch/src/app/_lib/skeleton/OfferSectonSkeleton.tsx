@@ -16,9 +16,9 @@ const OfferSectionSkeleton: React.FC = () => {
       <div className=" p-4">
         <div className="h-1.5 w-20  bg-[#2B59FF] rounded mb-4"></div>
         <div className="space-y-1">
-          <div className="h-1.5 w-11/12 bg-gray-300 rounded"></div>
-          <div className="h-1.5 w-9/12 bg-gray-300 rounded"></div>
-          <div className="h-1.5 w-7/12 bg-gray-300 rounded"></div>
+          <div className="h-1.5 w-11/12 bg-[#e1e3e8] rounded"></div>
+          <div className="h-1.5 w-9/12 bg-[#e1e3e8] rounded"></div>
+          <div className="h-1.5 w-7/12 bg-[#e1e3e8] rounded"></div>
         </div>
       </div>
     </div>
