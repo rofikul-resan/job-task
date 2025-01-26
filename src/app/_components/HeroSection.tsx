@@ -3,7 +3,7 @@ import { FaPlayCircle } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
-    <div className=" py-24 flex items-center justify-center relative">
+    <div className=" py-24 flex items-center justify-center relative ">
       {/* background color */}
       <div className="absolute inset-0 -z-10">
         <div></div>
@@ -12,10 +12,10 @@ const HeroSection = () => {
       </div>
 
       {/* main text */}
-      <div className="absolute inset-0 z-10">
-        <div className="h-48 w-48 rounded-full  absolute top-[200px] left-1/2  bg-[#9F36F2B2] blur-[200px]"></div>
-        <div className="h-32 w-32 rounded-full  absolute top-[400px] -left-[200px]  bg-[#FFCF7366] blur-[200px] "></div>
-        <div className="h-32 w-32 rounded-full  absolute bottom-0 -right-[200px]  bg-[#F23690B2] blur-[200px] "></div>
+      <div className="absolute inset-0 -z-10">
+        <div className="h-48 w-48 rounded-full  absolute top-[100px] left-1/2 -translate-x-1/2 bg-[#9F36F2B2] blur-[150px]"></div>
+        <div className="h-32 w-32 rounded-full  absolute top-[400px] -left-[200px]  bg-[#FFCF7366] blur-[150px] "></div>
+        <div className="h-32 w-32 rounded-full  absolute bottom-0 -right-[200px]  bg-[#F23690B2] blur-[150px] "></div>
       </div>
 
       {/* main text */}
@@ -43,6 +43,7 @@ const HeroSection = () => {
           </Button>
         </div>
       </div>
+      <hr className="w-full  h-[1px] bg-[#221d2b] absolute bottom-10 left-0 opacity-25" />
     </div>
   );
 };
