@@ -42,9 +42,9 @@ const FeatureSection = () => {
           build beautiful website
         </h2>
       </div>
-      <div className="gap-10 grid lg:feature-sec-grid">
+      <div className="gap-10 lg:flex">
         {/* left side */}
-        <div className="h-full">
+        <div className="h-full lg:w-1/3">
           {featureCategoryList.map((category, idx) => (
             <div key={idx} onClick={() => setCgIndex(idx)}>
               <FeatureCategoryButton
@@ -57,7 +57,7 @@ const FeatureSection = () => {
         </div>
 
         {/* right side */}
-        <div className=" relative ">
+        <div className=" relative  lg:flex-1">
           <div className="h-48 w-48 rounded-full absolute bg-[#9F36F2B2] bottom-10 left-48 blur-[150px] -z-10"></div>
           <FeatureShowCard />
         </div>

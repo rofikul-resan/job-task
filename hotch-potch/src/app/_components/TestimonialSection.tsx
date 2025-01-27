@@ -2,18 +2,26 @@
 import React, { useEffect, useState } from "react";
 import TestimonialCard from "./card/TestimonialCard";
 
+interface Testimonial {
+  name: string;
+  username: string;
+  hashtag: string;
+  image: string;
+  testimonial: string;
+}
+
+type TestimonialGroupe = Testimonial[];
+
 const TestimonialSection = () => {
-  interface Testimonial {
-    name: string;
-    username: string;
-    hashtag: string;
-    image: string;
-    testimonial: string;
-  }
-
-  type TestimonialGroupe = Testimonial[];
-
   const [testimonials, setTestimonials] = useState<TestimonialGroupe[]>([]);
+
+  const indexCheck = (index: number) => {
+    if (index === 0) {
+      return "";
+    } else if (index == 1) {
+      return true;
+    } else return " hidden lg:block";
+  };
 
   useEffect(() => {
     fetch("/data/testimonialData.json")
@@ -43,20 +51,25 @@ const TestimonialSection = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-4">
           {testimonials.map((group: TestimonialGroupe, groupIndex: number) => (
-            <div key={groupIndex} className="space-y-4">
-              {group.map((testimonial: Testimonial, index: number) => (
-                <TestimonialCard
-                  key={index}
-                  name={testimonial.name}
-                  username={testimonial.username}
-                  image={testimonial.image}
-                  hashtag={testimonial.hashtag}
-                  testimonial={testimonial.testimonial}
-                />
-              ))}
-            </div>
+            <>
+              <div
+                key={groupIndex}
+                className={"space-y-4  lg:block " + indexCheck(groupIndex)}
+              >
+                {group.map((testimonial: Testimonial, index: number) => (
+                  <TestimonialCard
+                    key={index}
+                    name={testimonial.name}
+                    username={testimonial.username}
+                    image={testimonial.image}
+                    hashtag={testimonial.hashtag}
+                    testimonial={testimonial.testimonial}
+                  />
+                ))}
+              </div>
+            </>
           ))}
         </div>
       </div>
