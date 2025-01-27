@@ -2,6 +2,7 @@ import toolsImg1 from "@/assets/tools1.svg";
 import toolsImg2 from "@/assets/tools2.svg";
 import toolsImg3 from "@/assets/tools3.svg";
 import ToolsCard from "./card/ToolsCard";
+import Link from "next/link";
 
 type ToolsCardData = {
   id: number;
@@ -71,7 +72,7 @@ const ToolsSection = () => {
           human would do.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto mt-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto mt-10 items-center ">
         {toolsCardData.map((data: ToolsCardData) => (
           <ToolsCard
             key={data.id}
@@ -81,6 +82,10 @@ const ToolsSection = () => {
           />
         ))}
       </div>
+      <p className="text-sm font-md py-20 hover:underline text-center ">
+        <Link href={""}>See all 54 available tools</Link>
+      </p>
+      <div className="h-[0.3px] w-full mb-10 bg-[#232632]" />
     </div>
   );
 };

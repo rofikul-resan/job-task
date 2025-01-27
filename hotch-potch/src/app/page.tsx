@@ -1,4 +1,5 @@
 import BrandSection from "./_components/BrandSection";
+import FeatureSection from "./_components/FeatureSection";
 import HeroSection from "./_components/HeroSection";
 import Navbar from "./_components/Navbar";
 import OfferSection from "./_components/OfferSection";
@@ -17,6 +18,7 @@ export default function Home() {
         <OfferSection />
         <OfferSection2 />
         <ToolsSection />
+        <FeatureSection />
       </section>
     </main>
   );
