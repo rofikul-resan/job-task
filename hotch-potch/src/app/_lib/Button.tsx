@@ -8,7 +8,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ className, children }) => {
   return (
     <button
-      className={className + " capitalize px-4 py-3"}
+      className={className + " capitalize px-2 lg:px-3 lg:py-3 py-2"}
       style={{
         fontSize: "16px",
         fontWeight: "500",
