@@ -5,7 +5,7 @@ import OfferSectionCard2 from "./card/offerSectionCard/OfferSectionCard2";
 const OfferSection2 = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10  mx-auto mt-10 items-center">
-      <div className=" w-10/12 space-y-6 ">
+      <div className=" lg:w-10/12 space-y-3 lg:space-y-6 text-center ">
         <h2>
           Write what you want to convey through clear, & authentic writing
         </h2>
@@ -16,7 +16,7 @@ const OfferSection2 = () => {
         </p>
         <Button className="main-gradient px-3">Start 14 Days Free Trial</Button>
       </div>
-      <div className="relative">
+      <div className="relative ">
         <div className="h-48 w-48 absolute bottom-10 left-20 bg-[#9F36F2B2] rounded-full blur-[150px] -z-10 animate-pulse">
           {/* bg blue light  */}
         </div>

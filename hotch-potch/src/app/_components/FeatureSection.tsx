@@ -24,7 +24,7 @@ const FeatureCategoryButton = (props: {
       onClick={onclick}
       className={`${
         cgIndex === index ? "main-gradient" : " "
-      } rounded-lg py-5 px-7 w-full border border-[#282A37] mb-2 `}
+      } rounded-lg py-2 lg:py-5 px-7 w-full border border-[#282A37] mb-2 `}
     >
       <h5>{title}</h5>
     </div>
@@ -35,17 +35,14 @@ const FeatureSection = () => {
   const [cgIndex, setCgIndex] = useState<number>(0);
 
   return (
-    <div className="pb-24">
-      <div className="text-center pb-24">
+    <div className=" pb-12 lg:pb-24 px-4">
+      <div className="text-center pb-12 lg:pb-24">
         <h2>
           Mixland helps you <br />
           build beautiful website
         </h2>
       </div>
-      <div
-        style={{ display: "grid", gridTemplateColumns: "1fr 2fr" }}
-        className="gap-10"
-      >
+      <div className="gap-10 grid lg:feature-sec-grid">
         {/* left side */}
         <div className="h-full">
           {featureCategoryList.map((category, idx) => (

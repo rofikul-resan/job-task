@@ -54,12 +54,12 @@ const PriceSection = () => {
   const [activeId, setActiveId] = useState<string>("basic");
   return (
     <div className="w-10/12 mx-auto">
-      <div className="w-2/3 mx-auto text-center space-y-10 py-20">
-        <div className="px-20">
+      <div className="lg:w-2/3 mx-auto text-center space-y-4 lg:space-y-10 py-8 lg:py-20">
+        <div className="lg:px-20">
           <h2>Make the wise decision for your business</h2>
           <p
             style={{ fontSize: "18px" }}
-            className="text-paragraphColor  tracking-widest mt-10"
+            className="text-paragraphColor  lg:tracking-widest mt-4 lg:mt-10"
           >
             Choose from our affordable 3 packages
           </p>

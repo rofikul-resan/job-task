@@ -30,12 +30,12 @@ const TestimonialSection = () => {
   }, []);
   return (
     <div className="mb-20">
-      <div className="w-1/2 mx-auto text-center space-y-10 py-20">
-        <div className="px-20">
+      <div className="lg:w-1/2 mx-auto text-center space-y-4 lg:space-y-10 py-10 lg:py-20">
+        <div className=" px-5 lg:px-20">
           <h2>What our customers say</h2>
           <p
             style={{ fontSize: "18px" }}
-            className="text-paragraphColor  tracking-widest mt-10"
+            className="text-paragraphColor  lg:tracking-widest mt-4 lg:mt-10"
           >
             Read why thousands of marketers, writers, and entrepreneurs love us
             so much.
@@ -43,7 +43,7 @@ const TestimonialSection = () => {
         </div>
       </div>
       <div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 p-4">
           {testimonials.map((group: TestimonialGroupe, groupIndex: number) => (
             <div key={groupIndex} className="space-y-4">
               {group.map((testimonial: Testimonial, index: number) => (

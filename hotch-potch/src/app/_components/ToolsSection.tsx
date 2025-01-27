@@ -65,14 +65,14 @@ const toolsCardData: ToolsCardData[] = [
 const ToolsSection = () => {
   return (
     <div>
-      <div className="text-center w-5/12 mx-auto space-y-6">
+      <div className="text-center w-10/12 lg:w-5/12 mx-auto space-y-6">
         <h2>54 exciting writing tools</h2>
         <p className="text-paragraphColor tracking-wider">
           AI engines take information from various sources and read them like a
           human would do.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mx-auto mt-10 items-center ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-4 mx-auto mt-10 items-center ">
         {toolsCardData.map((data: ToolsCardData) => (
           <ToolsCard
             key={data.id}
@@ -82,7 +82,7 @@ const ToolsSection = () => {
           />
         ))}
       </div>
-      <p className="text-sm font-md py-20 hover:underline text-center ">
+      <p className="text-sm font-md py-10 lg:py-20 hover:underline text-center ">
         <Link href={""}>See all 54 available tools</Link>
       </p>
     </div>

@@ -11,13 +11,13 @@ const MiniSkeleton: React.FC<MiniSkeletonProps> = ({
   theme,
 }) => {
   return (
-    <div style={style} className={`rounded-md p-4 ${className}`}>
+    <div style={style} className={`rounded-md p-2 lg:p-4 ${className}`}>
       <div
         className={`${
           theme === "dark" ? "bg-[#DDE2ED88]" : "bg-[#DDE2ED]"
         } h-1.5 w-3/12 rounded-lg`}
       ></div>
-      <div className="space-y-3 mt-4">
+      <div className=" space-y-1 lg:space-y-3 mt-4">
         <div
           className={`${
             theme === "dark" ? "bg-[#DDE2ED88]" : "bg-[#DDE2ED]"
