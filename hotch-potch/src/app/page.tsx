@@ -23,7 +23,7 @@ export default function Home() {
           <FeatureSection />
         </section>
       </main>
-      <div className="w-full bg-[#252835]">
+      <div className="w-full footer-gradient py-20">
         <section className="max-w-[1260px] mx-auto">
           <TestimonialSection />
         </section>

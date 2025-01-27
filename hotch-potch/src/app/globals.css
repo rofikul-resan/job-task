@@ -80,3 +80,7 @@ h5 {
 .click-gradient {
   background: linear-gradient(0deg, #0035F5 100%, #A600F5 100%);
 }
+
+.footer-gradient {
+  background: linear-gradient(0deg, #171924 100%, #17192400 0%);
+}
