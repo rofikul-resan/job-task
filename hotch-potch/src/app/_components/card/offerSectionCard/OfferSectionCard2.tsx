@@ -1,9 +1,20 @@
+"use client";
 import MiniSkeleton from "@/app/_lib/skeleton/MiniSkeleton";
 import React from "react";
+import { motion } from "framer-motion";
 
 const OfferSectionCard2 = () => {
   return (
-    <div className="bg-white p-4 h-[350px] w-full mx-auto lg:h-[450px] lg:w-[550px] rounded-lg shadow-lg overflow-hidden ml-auto flex">
+    <motion.div
+      className="bg-white p-4 h-[350px] w-full mx-auto lg:h-[450px] lg:w-[550px] rounded-lg shadow-lg overflow-hidden ml-auto flex"
+      initial={{ x: 50, opacity: 0 }}
+      whileInView={{
+        x: 0,
+        opacity: 1,
+
+        transition: { duration: 0.3 },
+      }}
+    >
       <div className=" w-[30%] ">
         <ul className="text-paragraphColor lg:text-body2 flex flex-col ">
           <li className="hover:underline">Blog Outline</li>
@@ -41,7 +52,7 @@ const OfferSectionCard2 = () => {
           <MiniSkeleton className="bg-[#f8faff]" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

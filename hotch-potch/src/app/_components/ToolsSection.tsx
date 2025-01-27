@@ -73,8 +73,9 @@ const ToolsSection = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-10 gap-4 mx-auto mt-10 items-center ">
-        {toolsCardData.map((data: ToolsCardData) => (
+        {toolsCardData.map((data: ToolsCardData, index: number) => (
           <ToolsCard
+            index={index}
             key={data.id}
             image={data.img}
             details={data.details}

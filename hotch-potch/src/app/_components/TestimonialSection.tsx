@@ -55,12 +55,12 @@ const TestimonialSection = () => {
           {testimonials.map((group: TestimonialGroupe, groupIndex: number) => (
             <>
               <div
-                key={groupIndex}
+                key={groupIndex + Math.random()}
                 className={"space-y-4  lg:block " + indexCheck(groupIndex)}
               >
                 {group.map((testimonial: Testimonial, index: number) => (
                   <TestimonialCard
-                    key={index}
+                    key={index + Math.random()}
                     name={testimonial.name}
                     username={testimonial.username}
                     image={testimonial.image}

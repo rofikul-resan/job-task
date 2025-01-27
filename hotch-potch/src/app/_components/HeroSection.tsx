@@ -1,5 +1,7 @@
+"use client";
 import Button from "@/app/_lib/Button";
 import { FaPlayCircle } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -18,7 +20,18 @@ const HeroSection = () => {
       </div>
 
       {/* main text */}
-      <div className="w-11/12 lg:w-[40%] mx-auto text-center pb-6 lg:pb-10 space-y-4 lg:space-y-10">
+      <motion.div
+        className="w-11/12 lg:w-[40%] mx-auto text-center pb-6 lg:pb-10 space-y-4 lg:space-y-10"
+        initial={{
+          y: -100,
+          opacity: 0,
+        }}
+        animate={{
+          y: 0,
+          opacity: 1,
+          transition: { duration: 0.3, stiffness: 50 },
+        }}
+      >
         <div>
           <h1>
             Write better content for your{" "}
@@ -33,15 +46,48 @@ const HeroSection = () => {
           media websites and much more.
         </p>
         <div className="flex gap-2 flex-col w-fit mx-auto">
-          <Button className="main-gradient w-fit px-3">
-            Start 14 Days Free Trial
-          </Button>
-          <Button className=" w-full flex items-center justify-center gap-2 light-btn">
-            <FaPlayCircle className="icon-btn" />
-            <span>Watch A Demo</span>
-          </Button>
+          <motion.div
+            initial={{
+              x: -100,
+              y: 100,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.3, stiffness: 50, delay: 0.3 },
+            }}
+          >
+            <Button className="main-gradient w-fit px-3">
+              Start 14 Days Free Trial
+            </Button>
+          </motion.div>
+          <motion.div
+            initial={{
+              x: 100,
+              y: 100,
+              opacity: 0,
+            }}
+            animate={{
+              x: 0,
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.3,
+                stiffness: 50,
+                delay: 0.3,
+                type: "",
+              },
+            }}
+          >
+            <Button className=" w-full flex items-center justify-center gap-2 light-btn">
+              <FaPlayCircle className="icon-btn" />
+              <span>Watch A Demo</span>
+            </Button>
+          </motion.div>
         </div>
-      </div>
+      </motion.div>
       <hr className="w-full  h-[1px] bg-[#221d2b] absolute bottom-10 left-0 opacity-25" />
     </div>
   );

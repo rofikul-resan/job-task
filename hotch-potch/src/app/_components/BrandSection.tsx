@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import band1 from "@/assets/band1.png";
 import band2 from "@/assets/band2.png";
@@ -7,6 +8,7 @@ import band5 from "@/assets/band5.png";
 import band6 from "@/assets/band6.png";
 import band7 from "@/assets/band7.png";
 import band8 from "@/assets/band8.png";
+import { motion } from "framer-motion";
 
 import Image, { StaticImageData } from "next/image";
 
@@ -28,9 +30,21 @@ const BrandSection = () => {
       <div className="mt-10">
         <div className="grid grid-cols-4  justify-between">
           {bandLogo.map((logo, index) => (
-            <div key={index} className="flex justify-center items-center">
+            <motion.div
+              key={index}
+              initial={{
+                x: -100,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: { delay: index * 0.1, duration: 0.1 },
+              }}
+              className="flex justify-center items-center"
+            >
               <Image src={logo} alt="brand logo" />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

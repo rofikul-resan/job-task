@@ -1,5 +1,8 @@
+"use client";
 import Button from "@/app/_lib/Button";
 import React from "react";
+import { motion } from "framer-motion";
+
 interface PricingPlan {
   id: string;
   name: string;
@@ -7,6 +10,7 @@ interface PricingPlan {
   teamSize: string;
   features: string[];
   activeId: string;
+  index: number;
 }
 
 const PriceCard: React.FC<PricingPlan> = ({
@@ -16,9 +20,21 @@ const PriceCard: React.FC<PricingPlan> = ({
   features,
   id,
   activeId,
+  index,
 }) => {
   return (
-    <div className="max-w-md mx-auto p-8 rounded-2xl bg-[#282A37] flex flex-col justify-between h-full">
+    <motion.div
+      className="max-w-md mx-auto p-8 rounded-2xl bg-[#282A37] flex flex-col justify-between h-full hover:-translate-y-4 duration-150"
+      initial={{ x: -100, opacity: 0 }}
+      whileInView={{
+        x: 0,
+        opacity: 1,
+        transition: {
+          duration: 0.2,
+          delay: index * 0.2,
+        },
+      }}
+    >
       <div>
         <p className="mb-10 ">{name}</p>
         <div>
@@ -48,7 +64,7 @@ const PriceCard: React.FC<PricingPlan> = ({
           Get Started
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
