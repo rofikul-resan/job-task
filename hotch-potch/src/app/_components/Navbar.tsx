@@ -24,10 +24,10 @@ const Navbar = () => {
         </div>
       </div>
       <div className="flex gap-2 items-center">
-        <Button className="text-headlineColor  border-headlineColor  border">
+        <Button className="text-headlineColor  border-white/30  border light-btn">
           Sing In
         </Button>
-        <Button className="text-headlineColor  main-gradient ">
+        <Button className="text-headlineColor  main-gradient  ">
           Get Started Free
         </Button>
       </div>

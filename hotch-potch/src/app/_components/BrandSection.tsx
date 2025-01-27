@@ -26,7 +26,7 @@ const BrandSection = () => {
     <div className="w-9/12 mx-auto ">
       <h3 className="text-center">Trusted by nearly 5000+ paying customers</h3>
       <div className="mt-10">
-        <div className="grid grid-cols-2 md:grid-cols-4  justify-between">
+        <div className="grid grid-cols-4  justify-between">
           {bandLogo.map((logo, index) => (
             <div key={index} className="flex justify-center items-center">
               <Image src={logo} alt="brand logo" />

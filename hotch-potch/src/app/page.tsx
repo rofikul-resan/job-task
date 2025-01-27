@@ -19,7 +19,7 @@ export default function Home() {
           <header>
             <Navbar />
           </header>
-          <section className="space-y-28">
+          <section className=" px-6 lg:px-0 space-y-14 lg:space-y-28">
             <HeroSection />
             <BrandSection />
             <OfferSection />

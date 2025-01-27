@@ -13,12 +13,12 @@ const OfferSectionSkeleton: React.FC = () => {
         <div style={nabBtnStyle} className=" rounded-full bg-[#fabb18]"></div>
         <div style={nabBtnStyle} className=" rounded-full bg-[#45c646] "></div>
       </div>
-      <div className=" p-4">
-        <div className="h-1.5 w-20  bg-[#2B59FF] rounded mb-4"></div>
+      <div className="p-1 lg:p-4">
+        <div className="h-1 lg:h-1.5 w-20  bg-[#2B59FF] rounded mb-2 lg:mb-4"></div>
         <div className="space-y-1">
-          <div className="h-1.5 w-11/12 bg-[#e1e3e8] rounded"></div>
-          <div className="h-1.5 w-9/12 bg-[#e1e3e8] rounded"></div>
-          <div className="h-1.5 w-7/12 bg-[#e1e3e8] rounded"></div>
+          <div className="h-1 lg:h-1.5 w-11/12 bg-[#e1e3e8] rounded"></div>
+          <div className="h-1 lg:h-1.5 w-9/12 bg-[#e1e3e8] rounded"></div>
+          <div className="h-1 lg:h-1.5 w-7/12 bg-[#e1e3e8] rounded"></div>
         </div>
       </div>
     </div>

@@ -70,17 +70,70 @@ h5 {
 }
 
 .main-gradient {
+  transition: background-color 0.5s ease-in-out;
   background: linear-gradient(0deg, #2B59FF 100%, #BB2BFF 100%);
+
 }
 
-.hover-gradient {
+.main-gradient:hover {
   background: linear-gradient(0deg, #5C7FFF 100%, #CB5CFF 100%);
 }
 
-.click-gradient {
+.main-gradient:active {
   background: linear-gradient(0deg, #0035F5 100%, #A600F5 100%);
 }
 
+.light-btn:hover {
+  border: #2b59ff 1px solid;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(0deg, #2B59FF 100%, #BB2BFF 100%);
+}
+
+.light-btn:hover .icon-btn {
+  color: #2b59ff;
+}
+
+
 .footer-gradient {
   background: linear-gradient(0deg, #17192496 100%, #17192400 0%);
+}
+
+@media only screen and (max-width: 600px) {
+
+  h1 {
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 500;
+
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 600;
+
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+
+  }
+
+  h5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+
+  }
 }

@@ -2,7 +2,7 @@ import React from "react";
 
 const OfferSectionCard = () => {
   return (
-    <div className="bg-white p-4 rounded-lg h-[450px] w-[406px] shadow-lg overflow-hidden">
+    <div className="bg-white p-2 lg:p-4 rounded-lg h-[350px] lg:h-[450px] w-[250px] lg:w-[406px] shadow-lg overflow-hidden">
       <div>
         <h4 className="text-black">Results</h4>
         <p className="text-body2 text-paragraphColor">
