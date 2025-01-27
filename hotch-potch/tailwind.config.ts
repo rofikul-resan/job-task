@@ -25,7 +25,8 @@ export default {
     fontWeight: {
       default: "400",
       sm: "500",
-      md : "600",
+      md: "600",
+      light:"300"
     },
     lineHeight: {
       default: "28px",
