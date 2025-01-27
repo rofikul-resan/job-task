@@ -7,8 +7,6 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "Hotch-potch | Home",
   description: "Develop by Rofikul Islam Resan",
@@ -21,11 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} max-w-[1260px] mx-auto` }
-      >
-        {children}
-      </body>
+      <body className={`${inter.variable}`}>{children}</body>
     </html>
   );
 }

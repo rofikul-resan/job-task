@@ -32,10 +32,10 @@ const FeatureCategoryButton = (props: {
 };
 
 const FeatureSection = () => {
-  const [cgIndex, setCgIndex] = useState<number>(1);
+  const [cgIndex, setCgIndex] = useState<number>(0);
 
   return (
-    <div>
+    <div className="pb-24">
       <div className="text-center pb-24">
         <h2>
           Mixland helps you <br />
@@ -60,7 +60,8 @@ const FeatureSection = () => {
         </div>
 
         {/* right side */}
-        <div className=" ">
+        <div className=" relative ">
+          <div className="h-48 w-48 rounded-full absolute bg-[#9F36F2B2] bottom-10 left-48 blur-[150px] -z-10"></div>
           <FeatureShowCard />
         </div>
       </div>
