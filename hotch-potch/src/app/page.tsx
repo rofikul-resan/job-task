@@ -1,5 +1,7 @@
 import BrandSection from "./_components/BrandSection";
 import FeatureSection from "./_components/FeatureSection";
+import Footer from "./_components/Footer";
+import FooterUpSection from "./_components/FooterUpSection";
 import HeroSection from "./_components/HeroSection";
 import Navbar from "./_components/Navbar";
 import OfferSection from "./_components/OfferSection";
@@ -36,7 +38,11 @@ export default function Home() {
           <SectionDivider />
           <section className="max-w-[1260px] mx-auto">
             <PriceSection />
+            <FooterUpSection />
           </section>
+          <footer className="max-w-[1260px] mx-auto">
+            <Footer />
+          </footer>
         </div>
       </main>
     </div>

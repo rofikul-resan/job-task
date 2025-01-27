@@ -67,15 +67,20 @@ const PriceSection = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {priceData.map((price) => (
-          <PriceCard
-            activeId={activeId}
+          <div
+            className="h-full"
             key={price.id}
-            features={price.features}
-            id={price.id}
-            name={price.name}
-            price={price.price}
-            teamSize={price.teamSize}
-          />
+            onClick={() => setActiveId(price.id)}
+          >
+            <PriceCard
+              activeId={activeId}
+              features={price.features}
+              id={price.id}
+              name={price.name}
+              price={price.price}
+              teamSize={price.teamSize}
+            />
+          </div>
         ))}
       </div>
     </div>

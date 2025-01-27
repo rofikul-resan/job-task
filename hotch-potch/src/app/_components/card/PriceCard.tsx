@@ -18,7 +18,7 @@ const PriceCard: React.FC<PricingPlan> = ({
   activeId,
 }) => {
   return (
-    <div className="max-w-md mx-auto p-8 rounded-2xl bg-[#282A37] flex flex-col justify-between">
+    <div className="max-w-md mx-auto p-8 rounded-2xl bg-[#282A37] flex flex-col justify-between h-full">
       <div>
         <p className="mb-10 ">{name}</p>
         <div>
