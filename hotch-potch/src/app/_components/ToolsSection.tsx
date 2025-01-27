@@ -85,7 +85,6 @@ const ToolsSection = () => {
       <p className="text-sm font-md py-20 hover:underline text-center ">
         <Link href={""}>See all 54 available tools</Link>
       </p>
-      <div className="h-[0.3px] w-full mb-10 bg-[#232632]" />
     </div>
   );
 };

@@ -29,7 +29,7 @@ const TestimonialSection = () => {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div>
+    <div className="mb-20">
       <div className="w-1/2 mx-auto text-center space-y-10 py-20">
         <div className="px-20">
           <h2>What our customers say</h2>

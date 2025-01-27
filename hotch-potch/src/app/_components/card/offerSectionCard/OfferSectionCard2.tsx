@@ -49,7 +49,7 @@ const OfferSectionCard2 = () => {
           Here&apos;s what our AI came up with.
         </p>
         <div className="mt-4 space-y-2">
-          <MiniSkeleton className="bg-black" />
+          <MiniSkeleton className="bg-black" theme="dark" />
           <MiniSkeleton className="bg-[#f8faff]" />
           <MiniSkeleton className="bg-[#f8faff]" />
           <MiniSkeleton className="bg-[#f8faff]" />
