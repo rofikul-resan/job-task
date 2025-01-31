@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({ children, className, style }) => {
     <div
       style={style}
       className={
-        "flex gap-4 items-center py-3 px-4  justify-between rounded capitalize text-[16px] font-semibold " +
+        "flex  items-center py-2 px-[14px]  justify-between rounded capitalize text-[16px] font-semibold " +
         className
       }
     >
