@@ -20,7 +20,7 @@ const Navbar = () => {
       <ul className=" flex items-center mb-1">
         <li className="relative px-6 py-3 flex items-center justify-between gap-2 group transition-all  ">
           <span>Solutions</span> <FaAngleDown className="mt-1" />
-          <ul className="absolute hidden opacity-0 top-12 rounded  left-6 bg-white w-[240px] h-full text-black group-hover:block group-hover:opacity-100 duration-300">
+          <ul className="absolute hidden opacity-0 top-12 rounded  left-6 bg-white w-[240px] h-[300%] inset-0 text-black group-hover:block group-hover:opacity-100 duration-300">
             <li className="py-3 px-4 w-[240px] border-b-[0.5px] hover:text-primary  border-gray-200">
               AnyCaaS
             </li>
@@ -51,7 +51,7 @@ const Navbar = () => {
       </ul>
       <div>
         <Button
-          className="border border-white bg-transparent hover:bg-white hover:text-primary transition-all shadow-md gap-2 group  
+          className="border border-white bg-transparent hover:bg-white hover:text-primary transition-all hover:shadow-md gap-2 group  
         "
         >
           <span>Contact Us</span>{" "}
